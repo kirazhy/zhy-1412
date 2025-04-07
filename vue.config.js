@@ -16,13 +16,13 @@ module.exports = defineConfig({
 	},
 
 	// 使用 Vue CLI 提供的库模式进行打包
-	chainWebpack: config => {
-		if (process.env.NODE_ENV === 'production') {
-			config.output
-				.filename('zhy-1412.min.js') // 生成的文件名
-				.library('Zhy1412') // 库名
-				.libraryTarget('umd') // 输出格式
-				.umdNamedDefine(true); // 命名模块的定义
-		}
-	}
+	// chainWebpack: config => {
+	// 	if (process.env.NODE_ENV === 'production') {
+	// 		config.output
+	// 			.filename('zhy-1412.min.js') // 生成的文件名
+	// 			.library('Zhy1412') // 库名
+	// 			.libraryTarget('umd') // 输出格式
+	// 			.umdNamedDefine(true); // 命名模块的定义
+	// 	}
+	// }
 });
