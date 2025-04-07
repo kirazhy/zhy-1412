@@ -1,6 +1,6 @@
 {
   "name": "zhy-1412",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "zhy的Vue组件以及各种工具函数",
   "main": "lib/zhy-1412.umd.min.js",
   "author": "Huayi Zhang 1039824096@qq.com",
@@ -10,7 +10,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name zhy-1412 --dest lib src/index.js"
-
   },
   "dependencies": {
     "core-js": "^3.8.3",
