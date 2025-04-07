@@ -1,6 +1,6 @@
 {
   "name": "zhy-1412",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "zhy的Vue组件以及各种工具函数",
   "main": "lib/zhy-1412.umd.js",
   "module": "lib/zhy-1412.umd.js",
