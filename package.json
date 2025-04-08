@@ -5,6 +5,11 @@
   "main": "lib/zhy-1412.umd.js",
   "module": "lib/zhy-1412.umd.js",
   "author": "Huayi Zhang 1039824096@qq.com",
+  "keywords": ["utils", "style", "scss", "lib", "vue", "mixin", "interceptor", "uni", "wechat", "miniapp"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirazhy/zhy-1412.git"
+  },
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
