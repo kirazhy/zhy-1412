@@ -7,6 +7,9 @@
     &-y {
         flex-direction: column;
     }
+    &-inline {
+        display: inline-flex;
+    }
     &-wrap {
         flex-wrap: wrap;
     }
