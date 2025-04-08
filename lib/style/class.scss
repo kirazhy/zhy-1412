@@ -1,0 +1,68 @@
+// 样式类
+.flex {
+    display: flex;
+    &-x {
+        flex-direction: row;
+    }
+    &-y {
+        flex-direction: column;
+    }
+    &-wrap {
+        flex-wrap: wrap;
+    }
+    &-justify {
+        &-start {
+            justify-content: flex-start;
+        }
+        &-center {
+            justify-content: center;
+        }
+        &-end {
+            justify-content: flex-end;
+        }
+        &-between {
+            justify-content: space-between;
+        }
+        &-around {
+            justify-content: space-around;
+        }
+    }
+    &-align {
+        &-start {
+            align-items: flex-start;
+        }
+        &-center {
+            align-items: center;
+        }
+        &-end {
+            align-items: flex-end;
+        }
+        &-baseline {
+            align-items: baseline;
+        }
+        &-stretch {
+            align-items: stretch;
+        }
+    }
+    &-1 {
+        flex: 1;
+    }
+    &-shrink {
+        &-0 {
+            flex-shrink: 0;
+        }
+    }
+}
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-left {
+        text-align: left;
+    }
+    &-ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

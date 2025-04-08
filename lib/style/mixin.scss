@@ -1,0 +1,7 @@
+// https://blog.csdn.net/weixin_44622984/article/details/111572159
+// https://developers.weixin.qq.com/community/develop/doc/000a8c5bcc0008c89e7c2fb0e56800
+// ios底部安全区padding-bottom躲避，constant和env的顺序不能变
+@mixin ios-bottom-safearea($default: 0px)  {
+    padding-bottom: calc(#{$default} + constant(safe-area-inset-bottom)); /*兼容 IOS<11.2*/
+    padding-bottom: calc(#{$default} + env(safe-area-inset-bottom)); /*兼容 IOS<11.2*/
+}
