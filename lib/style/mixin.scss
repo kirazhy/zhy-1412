@@ -67,6 +67,8 @@
     $has-handle: false
 ) {
     position: relative;
+    width: $width;
+    height: $height;
     // 根号2
     $root2: 1.414;
     &::before {
