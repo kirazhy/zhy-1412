@@ -5,7 +5,6 @@
     padding-bottom: calc(#{$default} + constant(safe-area-inset-bottom)); /* 兼容 iOS 设备 */
     padding-bottom: calc(#{$default} + env(safe-area-inset-bottom));  /* 兼容 iPhone X 及以上设备 */
 }
-
 /*
  * $hotzone-length热区的边长，热区只能是正方形
  * $cross-length叉号区域的边长，只能是个正方形，默认是热区的一半
@@ -49,6 +48,49 @@
         background: $color;
         @if $border-radius == true {
             border-radius: $cross-thickness / 2;
+        }
+    }
+}
+/*
+ * $width图标宽度
+ * $height图标高度
+ * $thickness线条厚度
+ * $border-radius箭头部分是否有圆角
+ * $has-handle是否有柄
+*/
+@mixin arrow-up-icon (
+    $width,
+    $height,
+    $thickness,
+    $color: black,
+    $border-radius: false,
+    $has-handle: false
+) {
+    position: relative;
+    // 根号2
+    $root2: 1.414;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: $width / 2 * $root2;
+        height: $width / 2 * $root2;
+        border-top: $thickness solid $color;
+        border-left: $thickness solid $color;
+        @if $border-radius == true {
+            border-radius: $thickness;
+        }
+        transform: translateX(-50%) rotate(45deg);
+    }
+    @if ($has-handle) {
+        &::after {
+            content: '';
+            position: absolute;
+            width: $thickness;
+            height: $height;
+            left: 50%;
+            background: $color;
+            transform: translateX(-50%);
         }
     }
 }
