@@ -68,4 +68,18 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+    &-bold {
+        font-weight: bold;
+    }
+    &-bolder {
+        font-weight: bolder;
+    }
+}
+.overflow {
+    &-hidden {
+        overflow: hidden;
+    }
+    &-scroll {
+        overflow: scroll;
+    }
 }
