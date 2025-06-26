@@ -13,7 +13,7 @@
 */
 @mixin cross-icon(
     $hotzone-length,
-    $cross-length: $hotzone-length / 2,
+    $cross-length: calc($hotzone-length / 2),
     $cross-thickness: 6rpx,
     $color: black,
     $border-radius: false
