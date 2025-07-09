@@ -1,5 +1,5 @@
 // https://uniapp.dcloud.net.cn/tutorial/syntax-css.html#%E5%B0%BA%E5%AF%B8%E5%8D%95%E4%BD%8D
 // px转换为rpx
 @function px2rpx($px, $target: 375) {
-    @return $px * 750rpx / $target;
+    @return calc($px * 750rpx / $target);
 }
