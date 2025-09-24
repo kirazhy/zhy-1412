@@ -89,3 +89,15 @@
         overflow: scroll;
     }
 }
+// 清除button默认样式
+button.default-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    font-size: unset;
+    &:after {
+        display: none;
+    }
+}
